@@ -86,9 +86,7 @@ cleanall: clean cleanparser
 
 install:
 	cp $(LIB_BUILD) $(INSTALL)/lib/$(LIB_BUILD)
-	rm -rf $(INSTALL)/include/hsql
 	cp -r src $(INSTALL)/include/hsql
-	find $(INSTALL)/include/hsql -not -name '*.h' -type f | xargs rm
 
 
 
